@@ -30,28 +30,28 @@ const Header = () => {
                     <Link to='/'>FAQs</Link>
                 </li>
                 <li>
-                    <Link to='/'>Ask question</Link>
+                    <Link to='/'>Q&A</Link>
                 </li>
                 <li>
-                    <Link to='/' onClick={handleModal}>Generate images</Link>
+                    <Link to='/' onClick={handleModal}>Image generator</Link>
                 </li>
                 <li>
-                    <Link to='/'>Grammer correction</Link>
+                    <Link to='/'>Grammar corrector</Link>
                 </li>
                 
                 </div>
                 <div className='links-right'>
                 <li>
-                <Link to='/'>Convert codes</Link>
+                <Link to='/'>Code converter</Link>
                 </li>
                 <li>
-                    <Link to='/'>Explain codes</Link>
+                    <Link to='/'>Code explainer</Link>
                 </li>
                 <li>
-                    <Link to='/'>Summarize</Link>
+                    <Link to='/'>Summarizer</Link>
                 </li>
                 <li>
-                    <Link to='/'>Translation</Link>
+                    <Link to='/'>Translator</Link>
                 </li>
                 <li>
                     <Link to='/'>Movie to emoji</Link>

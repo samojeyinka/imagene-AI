@@ -30,11 +30,11 @@
     display: none;
 }
 
- @keyframes zoom {
+  @keyframes zoom {
     from {transform:scale(0)}
     to {transform:scale(1)}
-  
- }
+  }
+
 
   .close-icon{
     color: var(--text-deep);
@@ -44,12 +44,10 @@
     right: 0;
     padding: 1rem;
     cursor: pointer;
-    
+
   }
 
-.generate h1{
-    color: red;
-}
+
 
 
 :root{
@@ -63,5 +61,5 @@
     --text-deep:#efefef;
     --text-hover:#ffc0cb;
     --cool-color:#4e350294;
-  
+
   }
