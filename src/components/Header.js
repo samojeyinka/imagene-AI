@@ -4,6 +4,8 @@ import {Link} from 'react-router-dom';
 import {FaTimes} from 'react-icons/fa';
 import GenerateImage from '../pages/GenerateImage';
 import '../styles/Modal.css'
+import About from '../pages/About';
+import Developer from '../pages/Developer';
 
 const Header = () => {
 
@@ -19,7 +21,7 @@ const Header = () => {
   return (
     <header>
             <div className='intro'>
-                <h1>Oqaske AI</h1>
+                <h1>Imagene AI</h1>
                 
             </div>
 
@@ -27,37 +29,21 @@ const Header = () => {
             <ul>
                 <div className='links-left'>
                 <li>
-                    <Link to='/'>FAQs</Link>
+                    <Link to='https://github.com/samojeyinka?tab=repositories' target='_blank'>GitHub</Link>
                 </li>
-                <li>
-                    <Link to='/'>Q&A</Link>
-                </li>
+               
                 <li>
                     <Link to='/' onClick={handleModal}>Image generator</Link>
                 </li>
-                <li>
-                    <Link to='/'>Grammar corrector</Link>
-                </li>
+                
                 
                 </div>
                 <div className='links-right'>
                 <li>
-                <Link to='/'>Code converter</Link>
+                    <Link to='/' onClick={handleModal}>About</Link>
                 </li>
                 <li>
-                    <Link to='/'>Code explainer</Link>
-                </li>
-                <li>
-                    <Link to='/'>Summarizer</Link>
-                </li>
-                <li>
-                    <Link to='/'>Translator</Link>
-                </li>
-                <li>
-                    <Link to='/'>Movie to emoji</Link>
-                </li>
-                <li>
-                    <Link to='/'>About</Link>
+                    <Link to='/' onClick={handleModal}>Developer</Link>
                 </li>
                 </div>
                 
@@ -70,6 +56,14 @@ const Header = () => {
 
         <div className={`modal ${openModal ? 'modal': 'modal close'}`}>
             <GenerateImage close={close}/>
+        </div>
+
+        <div className={`modal ${openModal ? 'modal': 'modal close'}`}>
+            <About close={close}/>
+        </div>
+
+        <div className={`modal ${openModal ? 'modal': 'modal close'}`}>
+            <Developer close={close}/>
         </div>
 
         {/* =====================The modals starts =============== */}

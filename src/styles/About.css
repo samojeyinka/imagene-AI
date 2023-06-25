@@ -1,0 +1,32 @@
+.about h1{
+    padding: 2rem 0;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.about h1 span{
+    background-image: var(--primary-color);
+    background-clip: text;
+    color: transparent;
+}
+
+
+.about-content{
+    width: 80%;
+    margin: auto;
+    color: var(--text-deep);
+}
+
+
+.about-content p{
+    line-height: 1.5rem;
+}
+
+
+@media screen and (max-width:700px){
+    .about-content{
+        width: 90%;
+       
+    }
+     
+}

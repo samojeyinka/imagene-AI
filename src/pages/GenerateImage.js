@@ -59,8 +59,8 @@ const GenerateImage = ({close}) => {
           Search
         </button>
       </form>
-      {isLoading && <p>Loading...</p>}
-      {error && <p>{error}</p>}
+      {isLoading && <p className='loading'>Loading...</p>}
+      {error && <p className='error-alert'>{error}</p>}
       {image && (
         <div>
           <h2>{image.tags}</h2>

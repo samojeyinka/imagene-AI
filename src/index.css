@@ -33,11 +33,13 @@
   text-decoration: none;
   list-style: none;
   -webkit-tap-highlight-color: transparent;
+ 
   
 }
 
 body{
   background-color: var(--bg-background) ;
+  
 }
 
 a{
