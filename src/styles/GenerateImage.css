@@ -87,20 +87,13 @@
     font-weight: 600;
 }
 
+.loading{
+    color: rgb(92, 209, 92);
+}
 
-:root{
-    --primary-color:linear-gradient(43deg, #5c4dfe 0%,rgb(246, 119, 140) );;
-    --primary-color-hover:linear-gradient(43deg, #5c4dfe 0%,rgb(96, 43, 52) );
-    --bg-background: #121212;
-    --bg-secondary:#1a1a1a;
-    --bg-interface:#404040;
-    --bg-visual:#262626;
-    --text-light:#ffffff;
-    --text-deep:#efefef;
-    --text-hover:#ffc0cb;
-    --cool-color:#4e350294;
-  
-  }
+.error-alert{
+    color: #ff0000;
+}
 
   @media screen and (max-width:800px){
 
