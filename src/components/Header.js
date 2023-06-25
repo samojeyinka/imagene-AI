@@ -10,14 +10,31 @@ import Developer from '../pages/Developer';
 const Header = () => {
 
     const [openModal, setOpenModal] = useState(false);
+    const [openModalAbout, setOpenModalAbout] = useState(false);
+    const [openModalDev, setOpenModalDev] = useState(false);
     const handleModal = () => {
         setOpenModal(!openModal);
     }
 
+    const handleModalAbout = () => {
+        setOpenModalAbout(!openModalAbout);
+    }
+
+    const handleModalDev = () => {
+        setOpenModalDev(!openModalDev);
+    }
     const close = ()=> {
         setOpenModal(!openModal)
     }
     
+    const closeAbout = ()=> {
+        setOpenModalAbout(!openModalAbout)
+    }
+
+    const closeDev = ()=> {
+        setOpenModalDev(!openModalDev)
+    }
+
   return (
     <header>
             <div className='intro'>
@@ -40,10 +57,10 @@ const Header = () => {
                 </div>
                 <div className='links-right'>
                 <li>
-                    <Link to='/' onClick={handleModal}>About</Link>
+                    <Link to='/' onClick={handleModalAbout}>About</Link>
                 </li>
                 <li>
-                    <Link to='/' onClick={handleModal}>Developer</Link>
+                    <Link to='/' onClick={handleModalDev}>Developer</Link>
                 </li>
                 </div>
                 
@@ -58,12 +75,12 @@ const Header = () => {
             <GenerateImage close={close}/>
         </div>
 
-        <div className={`modal ${openModal ? 'modal': 'modal close'}`}>
-            <About close={close}/>
+        <div className={`modal ${openModalAbout ? 'modal': 'modal close'}`}>
+            <About close={closeAbout}/>
         </div>
 
-        <div className={`modal ${openModal ? 'modal': 'modal close'}`}>
-            <Developer close={close}/>
+        <div className={`modal ${openModalDev ? 'modal': 'modal close'}`}>
+            <Developer close={closeDev}/>
         </div>
 
         {/* =====================The modals starts =============== */}
