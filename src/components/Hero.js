@@ -38,7 +38,7 @@ const Hero = () => {
                        Get ready to be amazed by the power of Imagene.
                       </p>
                         <div className='hero-btns'>
-                            <button className='try-btn hero-btn' onClick={handleModal}>Try Oqaske</button>
+                            <button className='try-btn hero-btn' onClick={handleModal}>Try Imagene</button>
                              <a href='https://www.linkedin.com/in/ojeyinka-samuel-02406125a/' target='_blank' ><button className='dev-btn hero-btn'>Developer</button></a>
                         </div>
                   </div>
